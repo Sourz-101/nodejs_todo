@@ -15,7 +15,7 @@ dotenv.config({
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: [process.env.FRONTEND_URL, "https://nodejs-todo-3062.onrender.com"],
+    origin: [process.env.FRONTEND_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
